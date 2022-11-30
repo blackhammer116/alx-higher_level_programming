@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 /**
  * insert_node - inserts a number into a sorted linked list
  * @head: head pointer to a list
