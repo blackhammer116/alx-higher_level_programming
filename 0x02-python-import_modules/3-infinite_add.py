@@ -4,4 +4,4 @@ if __name__ == "__main__":
     n = 0
     for args in argv[1:]:
         n += int(args)
-    print(n)
+    print("{}".format(n))
