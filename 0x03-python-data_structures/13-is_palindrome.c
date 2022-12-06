@@ -7,33 +7,32 @@
 
 int is_palindrome(listint_t **head)
 {
-	if (*head == NULL)
-	{
+        if (*head == NULL)
+        {
+                return (1);
+        }
+
+        listint_t *current, *prev = NULL, *nxt = NULL, *temp = *head;
+        current = *head; 
+          
+        while (current)        {
+                nxt = current->next;
+                current->next = prev; 
+                prev = current;
+                current = nxt;
+        }    
+        current = prev;
+
+        while (temp)
+        {
+                if (temp->n == current->n)
+                {
+                        temp = temp->next; 
+                        current = current->next;
+                }
+                else
+                        return (0);
+        } 
 		return (1);
-	}
-
-	listint_t *current, *prev = NULL, *nxt = NULL, *temp = *head;
-	current = *head;
-	
-	while (current)
-	{
-		nxt = current->next;
-		current->next = prev;
-		prev = current;
-		current = nxt;
-	}
-	current = prev;
-
-	while (temp)
-	{
-		if (temp->n == current->n)
-		{
-			temp = temp->next;
-			current = current->next;
-		}
-		else
-			return (0);
-	}
-	return (1);
 
 }
