@@ -5,19 +5,14 @@ def list_division(my_list_1, my_list_2, list_length):
         for i,j in my_list_1,my_list_2:
             k = 0
             if len(result) < list_length:
-                '''
                 if type(i) != int or type(j) != int:
-                    result[k] = 0
-                    raise TypeError
+                    result[k].append = 0
                 elif j == 0:
                     result[k] = 0
-                    raise ZeroDivisionError
-                elif len(my_list_1) < len(my_list_2):
+                elif :
                     result[k] = 0
-                    raise IndexError
                 else:
-                '''
-                result[k] = my_list_1[k] / my_list_2[k]
+                    result[k] = i / j
             k += 1
     except TypeError:
         print("wrong type")
