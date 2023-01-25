@@ -3,7 +3,8 @@
 
 
 class Square():
-    """class Square with a private instance attribute and checks the validity"""
+    """class Square with a private instance attribute
+        and checks the validity"""
     def __init__(self, size=0):
         try:
             self.__size = size
