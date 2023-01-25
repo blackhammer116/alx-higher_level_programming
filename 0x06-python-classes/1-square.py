@@ -2,10 +2,6 @@
 """creating a private instace attribute"""
 
 class Square():
-    """class Square with
-
-    Attributes:
-        __size: private instace attribute
-
-    """
-    __size
+    """class Square with a private attribute"""
+    def __init__ (self,size):
+        self.__size = size
