@@ -15,4 +15,5 @@ class Square():
         except(TypeError):
             raise TypeError('size must be an integer')
     def area(self):
-        return size * size
+        if self.__size:
+            return self.__size ** 2 
