@@ -63,6 +63,9 @@ class Rectangle:
 
     def __str__(self):
         r = ""
+        
+        if self.width == 0 or self.height == 0:
+            return r
         for j in range(self.height):
             for i in range(self.width):
                 r += "#"
