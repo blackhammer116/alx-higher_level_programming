@@ -6,18 +6,20 @@ class Rectangle:
     """ class rectangle """
     def __init__(self, width=0, height=0):
         """ initalizing the parameters
-            
+
             Args:
                 width (int): width of the class
                 height (int): height of the class
         """
         self.__width = width
         self.__height = height
+
     def width(self):
         """ getter for width """
         return self.__width
+
     def width(self, value):
-        """ setter for width 
+        """ setter for width
             Args:
                 value (int): value to be setted
         """
@@ -36,9 +38,10 @@ class Rectangle:
     def height(self):
         """ getter for height """
         return self.__height
+
     def height(self, value):
         """ setter for height
-            Args: 
+            Args:
                 value (int): value to be setted
         """
         try:
