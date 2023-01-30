@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""  defining a class rectangle and creating a custom 
+"""  defining a class rectangle and creating a custom
     __repr__
 """
 
