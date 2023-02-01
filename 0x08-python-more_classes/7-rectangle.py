@@ -7,6 +7,8 @@
 class Rectangle:
     """ class rectangle """
     number_of_instances = 0
+    print_symbol = "#"
+
     def __init__(self, width=0, height=0):
         """ initalizing the parameters
             Args:
@@ -64,13 +66,13 @@ class Rectangle:
             return 2 * (self.width + self.height)
 
     def __str__(self):
-        r = ""
+        r = Rectangle.print_symbol
 
         if self.width == 0 or self.height == 0:
             return r
         for j in range(self.height):
             for i in range(self.width):
-                r += "#"
+                r += Rectangle.print_symbol
 
             if j != self.height - 1:
                 r += "\n"
