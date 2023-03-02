@@ -1,0 +1,8 @@
+"""
+>>> add_integer(2, 98)
+100
+>>> add_integer(2, b)
+TypeError("b must be an integer")
+>>> add_integer(a, 2)
+TypeError("a must be an integer")
+"""
