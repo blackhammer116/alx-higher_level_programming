@@ -15,6 +15,9 @@ def matrix_divided(matrix, div):
     i = 0
     j = 0
     
+    """if (any(isinstance(i, matrix) for i in matrix) is False):
+        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+"""
     checkType(matrix)
 
     if div == 0:
