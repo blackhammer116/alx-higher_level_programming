@@ -1,2 +1,2 @@
 -- command to select all
-Select *
+SHOW DATABASES;
