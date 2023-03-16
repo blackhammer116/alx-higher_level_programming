@@ -1,3 +1,3 @@
 -- selecting rows with identical values
-SELECT score,COUNT(score) AS "number" FROM second_table GROUP BY score
-HAVING COUNT(score) > 1 ORDER BY number DESC;
+SELECT score,COUNT(*) AS "number" FROM second_table GROUP BY score
+HAVING COUNT(*) > 1 ORDER BY number DESC;
