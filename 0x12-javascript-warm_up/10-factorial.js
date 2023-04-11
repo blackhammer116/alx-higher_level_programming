@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-function recur(a) {
+function recur (a) {
   if (!a) {
     return 1;
   } else {
