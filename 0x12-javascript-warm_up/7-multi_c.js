@@ -8,5 +8,5 @@ if (!args[2] || !parseInt(args[2])) {
 } else {
   for (let i = 0; i < parseInt(args[2]); i++) {
     console.log('C is fun');
-}
+    }
 }
