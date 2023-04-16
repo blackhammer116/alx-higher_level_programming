@@ -1,1 +1,1 @@
-using MySQL and SQLAlchemy with python
+Using MySQL and SQLAlchemy with python
