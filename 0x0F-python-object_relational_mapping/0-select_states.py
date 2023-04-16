@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-import sys
-import MySQLdb
 """
     imports mysql database
     imports system in order to take in command line argument
-    """
+"""
+import sys
+import MySQLdb
 
 
 if __name__ == "__main__":
