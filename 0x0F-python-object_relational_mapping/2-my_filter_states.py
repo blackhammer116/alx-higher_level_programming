@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-    Script that selects states that have their names starting
-    with "N"
+    Script that takes a state name via command line argument
+    and filters through the database
 
     using two modules MySQLdb and sys for database connection
     and for getting command line arguments
