@@ -8,19 +8,18 @@ import MySQLdb
 def abebe():
     """ This function listes all of the states in ascending order """
 
-    User = sys.argv[1]
-    password = sys.argv[2]
-    database = sys.argv[2]
-    db = MySQLdb.connect(host = "localhost", port = 3306, user = User, passwd = password, db = database, charset = "utf8")
+    U = sys.argv[1]
+    p = sys.argv[2]
+    d = sys.argv[2]
+    db = MySQLdb.connect(host="localhost", port=3306, user=U, passwd=p, db=d)
     cur = db.cursor()
-
     cur.execute("SELECT * FROM states ORDER BY id ASC")
     query_fetch = cur.fetchall()
-
     for row in query_fetch:
-        print (row)
+        print(row)
     cur.close()
     db.close()
+
 
 if __name__ == "__main__":
     abebe()
