@@ -5,7 +5,7 @@ import MySQLdb
 """ imports mysql database """
 
 
-def abebe():
+if __name__ == "__main__":
     """ This function listes all of the states in ascending order """
 
     U = sys.argv[1]
@@ -19,7 +19,3 @@ def abebe():
         print(row)
     cur.close()
     db.close()
-
-
-if __name__ == "__main__":
-    abebe()
