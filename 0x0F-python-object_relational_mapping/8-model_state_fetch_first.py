@@ -22,8 +22,9 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    if !session.query(State).first():
+    if session.query(State).first():
+        first = session.query(State).filter(State.id == 1).first()
+        print("{}: {}".format(first.id, first.name))
+    else:
         print("Nothing")
-    first = session.query(State).filter(State.id == 1).first()
-    print("{}: {}".format(first.id, first.name))
     session.close()
