@@ -22,6 +22,5 @@ if __name__ == "__main__":
 
     new = session.query(State).filter(State.id == 2).first()
     new.name = 'New Mexico'
-    #session.add(new)
     session.commit()
     session.close()
