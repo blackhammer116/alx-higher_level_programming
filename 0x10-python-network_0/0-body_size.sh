@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 # This script takes a URL from command line and
 # uses curl to get the size of the body of the response
 if [ $# -eq 0 ]; then
