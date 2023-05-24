@@ -6,6 +6,6 @@ request(url1, function (error, response, body) {
   if (error) {
     console.error(error);
   } else {
-    console.log((JSON.parse(body).films).length);
+    console.log(`${(JSON.parse(body).films).length}`);
   }
 });
