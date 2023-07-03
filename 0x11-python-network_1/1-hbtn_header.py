@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 urllib: module to handle request
-sys: module to get command  line argument
+argv: module to get command  line argument
 """
 
 import urllib.request
