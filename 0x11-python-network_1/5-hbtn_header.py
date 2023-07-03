@@ -3,7 +3,8 @@
 requests: module to handle requests
 sys: module to get command line argument
 """
-import requests, sys
+import requests
+import sys
 
 url = sys.argv[1]
 
