@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-urllib and sys modules
+urllib.request: module to get response of a url
+urllib.parse: module to parse the content
+argv: module to get command line argument
 """
 import urllib.request, urllib.parse
 from sys import argv
