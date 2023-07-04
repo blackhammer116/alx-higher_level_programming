@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """
 urllib.request: module to handle request
-argv: module to get command  line argument
 """
-
 import urllib.request
+""" 
+sys.argv: module to get command  line argument
+"""
 from sys import argv
 
 url = argv[1]
