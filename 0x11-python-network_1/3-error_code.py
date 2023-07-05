@@ -2,7 +2,7 @@
 """
 urllib.request: module to send request to a url
 urllib.error.HTTPError: module to get exception
-argv: module to get command line argument
+sys: module to get command line argument
 """
 import urllib.request, urllib.error.HTTPError
 import sys
