@@ -5,11 +5,11 @@ urllib.error.HTTPError: module to get exception
 argv: module to get command line argument
 """
 import urllib.request, urllib.error.HTTPError
-from sys import argv
+import sys
 
 if __name__ == "__main__":
     try:
-        url = argv[1]
+        url = sys.argv[1]
 
         with urllib.request.urlopen(url) as response:
             body = response.read().decode('utf-8')
