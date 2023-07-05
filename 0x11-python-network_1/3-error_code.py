@@ -4,8 +4,10 @@ urllib.request: module to send request to a url
 urllib.error.HTTPError: module to get exception
 sys: module to get command line argument
 """
-import urllib.request, urllib.error.HTTPError
+import urllib.request
+import urllib.error.HTTPError
 import sys
+
 
 if __name__ == "__main__":
     try:
