@@ -3,7 +3,8 @@
 requests: module to handle request
 sys: to geet command line argument
 """
-import requests, sys
+import requests
+import sys
 
 if __name__ == "__main__":
     url = sys.argv[1]
