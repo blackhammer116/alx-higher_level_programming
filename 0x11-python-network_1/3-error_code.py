@@ -8,8 +8,7 @@ import urllib.request
 import urllib.error.HTTPError
 import sys
 
-
-if __name__ == "__main__":
+def body():
     try:
         url = sys.argv[1]
 
@@ -19,3 +18,7 @@ if __name__ == "__main__":
         print(body)
     except urllib.error.HTTPError as error:
         print(f"Error: {error.code}")
+    
+
+if __name__ == "__main__":
+    body()
