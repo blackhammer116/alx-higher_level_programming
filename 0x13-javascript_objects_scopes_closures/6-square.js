@@ -6,12 +6,9 @@ class Square extends square {
     if (c === undefined) {
       super.print();
     } else {
-      for (let i = 0; i < super.size; i++) {
-        let row = '';
-        for (let j = 0; j < super.size; j++) {
-          row += c;
-        }
-        console.log(row);
+      for (let i = 0; i < this.height; i++) {
+        console.log(c.repeat(this.width));
+        }  
       }
     }
   }
