@@ -9,8 +9,8 @@ class Rectangle {
     this.height = h;
   }
   print(){
-    for (let i = 0; i < h; i++){
-      for (let j = 0; j < w; j++){
+    for (let i = 0; i < height; i++){
+      for (let j = 0; j < width; j++){
         console.log('X');
       }
     }
